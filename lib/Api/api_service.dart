@@ -14,7 +14,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class ApiService {
   final Dio _dio = Dio(
     BaseOptions(
-      baseUrl: "http://93.127.202.7:8080/driver_api/",
+      baseUrl: "http://93.127.202.7/driver_api/",
       connectTimeout: const Duration(seconds: 30),
       receiveTimeout: const Duration(seconds: 30),
       headers: {
@@ -61,7 +61,7 @@ class ApiService {
 
       final Dio dio = Dio(
         BaseOptions(
-          baseUrl: "http://93.127.202.7:8080/",
+          baseUrl: "http://93.127.202.7/",
           connectTimeout: const Duration(seconds: 30),
           receiveTimeout: const Duration(seconds: 30),
           headers: {
@@ -321,7 +321,7 @@ class ApiService {
   static Future<Map<String, dynamic>> updateDriver({
     required Map<String, dynamic> body,
   }) async {
-    const String baseUrl = "http://93.127.202.7:8080/driver_api/";
+    const String baseUrl = "http://93.127.202.7/driver_api/";
 
     try {
       Dio dio = Dio();
@@ -363,7 +363,7 @@ class ApiService {
     String? phone,
     required String securityToken,
   }) async {
-    const String baseUrl = "http://93.127.202.7:8080/rider_api/";
+    const String baseUrl = "http://93.127.202.7/rider_api/";
 
     try {
       // Build data map with only non-empty fields
@@ -458,7 +458,7 @@ class ApiService {
     required String riderId,
     required String status,
   }) async {
-    const url = 'http://93.127.202.7:8080/rider_api/rider_status_update.php';
+    const url = 'http://93.127.202.7/rider_api/rider_status_update.php';
 
     try {
       final response = await _dio.post(url, data: {

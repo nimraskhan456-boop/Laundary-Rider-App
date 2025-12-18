@@ -62,7 +62,7 @@ class RiderProfileController extends GetxController {
       print("📤 Update Rider Request Data: $data");
 
       final response = await Dio().put(
-        "http://93.127.202.7:8080/rider_api/update_rider.php",
+        "http://93.127.202.7/rider_api/update_rider.php",
         data: data,
         options: Options(
           headers: {

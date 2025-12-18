@@ -19,7 +19,7 @@ class NotificationRepo {
       };
       dio.options.responseType = ResponseType.plain;
       final String uri =
-          "http://93.127.202.7:8080/token.php?channelName=$channelName&target_id=$targetid&user_type=$role&uid=$uid&body=$body&touserType=$touserType";
+          "http://93.127.202.7/token.php?channelName=$channelName&target_id=$targetid&user_type=$role&uid=$uid&body=$body&touserType=$touserType";
 
       var response = await dio.post(uri);
 

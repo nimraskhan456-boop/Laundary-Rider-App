@@ -27,7 +27,7 @@
 // // //   /// Constructor to initialize Dio with default settings
 // // //   Api()
 // // //       : _dio = Dio(BaseOptions(
-// // //           baseUrl: 'http://93.127.202.7:8080/driver_api/', // Setting the base URL for all requests
+// // //           baseUrl: 'http://93.127.202.7/driver_api/', // Setting the base URL for all requests
 // // //           connectTimeout: Duration(seconds: 30), // Connection timeout duration
 // // //           receiveTimeout: Duration(seconds: 30), // Receive timeout duration
 // // //           headers: {
@@ -86,7 +86,7 @@ class Api {
   /// Constructor to initialize Dio with default settings
   Api()
       : _dio = Dio(BaseOptions(
-          baseUrl: 'http://93.127.202.7:8080/driver_api/', // ✅ Base URL
+          baseUrl: 'http://93.127.202.7/driver_api/', // ✅ Base URL
           connectTimeout: Duration(seconds: 80),
           receiveTimeout: Duration(seconds: 80),
           headers: {
